@@ -3,12 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+
+//import the directive
+import { HoverHighlightDirective } from './hightlight.directive';
+import { MainComponent } from './main/main.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    HoverHighlightDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
